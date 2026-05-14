@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Prince Bakery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fff5f7;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#ff4d6d,#ff8fa3);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:white;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffe066;
+}
+
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:20px;
+color:white;
+max-width:700px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#ff4d6d;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-size:18px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e63956;
+transform:scale(1.05);
+}
+
+section{
+padding:70px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+color:#ff4d6d;
+}
+
+.cake-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.cake-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.cake-card:hover{
+transform:translateY(-10px);
+}
+
+.cake-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.cake-info{
+padding:20px;
+}
+
+.price{
+color:#ff4d6d;
+font-size:22px;
+font-weight:600;
+margin:10px 0;
+}
+
+.accessories{
+background:#fff0f3;
+}
+
+.accessory-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.accessory-card{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.accessory-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+form{
+max-width:700px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea,
+form select{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+form button{
+width:100%;
+padding:15px;
+background:#ff4d6d;
+border:none;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+background:#ff4d6d;
+padding:30px;
+text-align:center;
+color:white;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+.hero-content h1{
+font-size:40px;
+}
+
+nav{
+display:none;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Prince Bakery 🎂</div>
+
+<nav>
+<a href="#cakes">Cakes</a>
+<a href="#accessories">Accessories</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Delicious Cakes For Every Celebration</h1>
+
+<p>Fresh • Beautiful • Tasty Cakes For Birthday, Anniversary & Party</p>
+
+<a href="#order" class="btn">Order Now</a>
+
+</div>
+
+</section>
+
+<section id="cakes">
+
+<h2 class="section-title">Our Special Cakes</h2>
+
+<div class="cake-grid">
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1000">
+<div class="cake-info">
+<h3>Chocolate Cake</h3>
+<p class="price">₹499</p>
+<a href="#order" class="btn">Buy Now</a>
+</div>
+</div>
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1000">
+<div class="cake-info">
+<h3>Red Velvet Cake</h3>
+<p class="price">₹899</p>
+<a href="#order" class="btn">Buy Now</a>
+</div>
+</div>
+
+<div class="cake-card">
+<img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?q=80&w=1000">
+<div class="cake-info">
+<h3>Strawberry Cake</h3>
+<p class="price">₹699</p>
+<a href="#order" class="btn">Buy Now</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="accessories" id="accessories">
+
+<h2 class="section-title">Birthday Accessories</h2>
+
+<div class="accessory-grid">
+
+<div class="accessory-card">
+<img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1000">
+<h3>Balloons</h3>
+<p>₹120</p>
+</div>
+
+<div class="accessory-card">
+<img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=1000">
+<h3>Birthday Candles</h3>
+<p>₹50</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="order">
+
+<h2 class="section-title">Place Your Order</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Mobile Number" required>
+<input type="text" placeholder="Address" required>
+
+<select required>
+<option>Select Cake</option>
+<option>Chocolate Cake</option>
+<option>Red Velvet Cake</option>
+<option>Strawberry Cake</option>
+</select>
+
+<textarea rows="5" placeholder="Extra Details"></textarea>
+
+<button type="submit">Order Now</button>
+
+</form>
+
+</section>
+
+<footer id="contact">
+
+<h2>Prince Bakery 🎂</h2>
+
+<p>Fresh Cakes & Birthday Accessories</p>
+
+<p>📞 +91 9876543210</p>
+
+<p>📍 Meerut, Uttar Pradesh</p>
+
+<p>© 2026 Prince Bakery. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
